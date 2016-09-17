@@ -1,30 +1,30 @@
 package net.zerocoding.tutorials.java.stringprocessing.assignment;
 /*
  * Process Flow
- * 	1. Ã£°íÀÚ ÇÏ´Â ¹®ÀÚ È¤Àº ¹®ÀÚ¿­ÀÌ ÀÖ´ÂÁö È®ÀÎ
- *    - true 2 ´Ü°è
+ * 	1. Ã£ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ È¤ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ È®ï¿½ï¿½
+ *    - true 2 ï¿½Ü°ï¿½
  *    - false while loop out
- *  2. Ã£°íÀÚ ÇÏ´Â ¹®ÀÚ È¤Àº ¹®ÀÚ¿­ÀÇ À§Ä¡(ÀÎµ¦½º °ª)¸¦ È®ÀÎ
- *    - ÀÎµ¦½º °ª ¹ÝÈ¯
- *    - ¹ÝÈ¯µÈ °ªÀº ÀúÀå or Ãâ·Â
- *    - 1 ´Ü°è·Î ÀÌµ¿(´ÙÀ½¿¡ ¿À´Â ¹®ÀÚ¿­À» ¹ÝÈ¯)
+ *  2. Ã£ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ È¤ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡(ï¿½Îµï¿½ï¿½ï¿½ ï¿½ï¿½)ï¿½ï¿½ È®ï¿½ï¿½
+ *    - ï¿½Îµï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½È¯
+ *    - ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ or ï¿½ï¿½ï¿½
+ *    - 1 ï¿½Ü°ï¿½ï¿½ ï¿½Ìµï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯)
  */
 public class StringSearch {
 	public static void main(String[] args) {
 		String sampleText = "appleadsftbfadfapasdfasdfe";
 		String searchKeyword = "p";
-		String tmpStr = sampleText; 	// °Ë»ö ¿µ¿ª ¾ÈÀÇ ÅØ½ºÆ®¸¦ º¸°ü ÇØµÑ ÀÓ½Ã º¯¼ö 
-		boolean bool = false;			// ¹®ÀÚ¿­ °Ë»ö on/off ÆÇ´Ü 
-		int index = 0;					// Ã£°íÀÚ ÇÏ´Â ¹®ÀÚ È¤Àº ¹®ÀÚ¿­ÀÇ ÀÎµ¦½º °ª
-		System.out.println("°Ë»ö ¹üÀ§´Â ´ÙÀ½°ú °°½À´Ï´Ù.");
+		String tmpStr = sampleText; 	// ï¿½Ë»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ø½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Øµï¿½ ï¿½Ó½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
+		boolean bool = false;			// ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½Ë»ï¿½ on/off ï¿½Ç´ï¿½ 
+		int index = 0;					// Ã£ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ È¤ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ ï¿½ï¿½
+		System.out.println("ï¿½Ë»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		System.out.println(sampleText);
-		System.out.println("°Ë»öÇÏ°íÀÚ ÇÏ½Ã´Â ¹®ÀÚ(¿­)´Â : " + searchKeyword + "ÀÔ´Ï´Ù.");
+		System.out.println("ï¿½Ë»ï¿½ï¿½Ï°ï¿½ï¿½ï¿½ ï¿½Ï½Ã´ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½)ï¿½ï¿½ : " + searchKeyword + "ï¿½Ô´Ï´ï¿½.");
 		System.out.println("=============================");
 		bool = tmpStr.contains(searchKeyword);
 		while(bool){
 			int tmpIndex = tmpStr.indexOf(searchKeyword);
 			index += tmpIndex;
-			System.out.println( index + "¹øÂ° ÀÎµ¦½º °ª À§Ä¡¿¡ ÀÖ½À´Ï´Ù.");
+			System.out.println( index + "ï¿½ï¿½Â° ï¿½Îµï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½.");
 			index++;
 			tmpStr = tmpStr.substring(tmpIndex + 1);
 			bool = tmpStr.contains(searchKeyword) == true? true : false; 

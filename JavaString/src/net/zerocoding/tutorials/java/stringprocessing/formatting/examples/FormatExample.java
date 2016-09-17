@@ -3,25 +3,25 @@ package net.zerocoding.tutorials.java.stringprocessing.formatting.examples;
 public class FormatExample {
 	public static void main(String[] args) {
 		/*
-		 * "%"±âÈ£¶õ : PlaceHolder
-		 *  »ç¿ë ¹æ¹ý : % (¼ö½Ä) (ÀÚ¸´¼ö) Å¸ÀÔ 
+		 * "%"ï¿½ï¿½È£ï¿½ï¿½ : PlaceHolder
+		 *  ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ : % (ï¿½ï¿½ï¿½ï¿½) (ï¿½Ú¸ï¿½ï¿½ï¿½) Å¸ï¿½ï¿½ 
 		 */
 		
 		/*
-		 * ±âº» »ç¿ë
+		 * ï¿½âº» ï¿½ï¿½ï¿½
 		 */
 //		{
-//			String tmpStr1 = String.format("Á¤¼ö Ç¥Çö : %d", 50);
-//			String tmpStr2 = String.format("¹®ÀÚ¿­ Ç¥Çö : %s", "¾È³çÇÏ¼¼¿ä");
-//			String tmpStr3 = String.format("¼Ò¼öÁ¡ Ç¥Çö : %f", 1.3333);
-//			String tmpStr4 = String.format("ÁøÀ§ °ª Ç¥Çö : %b", true);
+//			String tmpStr1 = String.format("ï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½ : %d", 50);
+//			String tmpStr2 = String.format("ï¿½ï¿½ï¿½Ú¿ï¿½ Ç¥ï¿½ï¿½ : %s", "ï¿½È³ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
+//			String tmpStr3 = String.format("ï¿½Ò¼ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½ : %f", 1.3333);
+//			String tmpStr4 = String.format("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½ï¿½ : %b", true);
 //			System.out.println(tmpStr1);
 //			System.out.println(tmpStr2);
 //			System.out.println(tmpStr3);
 //			System.out.println(tmpStr4);			
 //		}
 		/*
-		 * ÀÀ¿ë »ç¿ë1
+		 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½1
 		 */
 //		{
 //			final String FORMAT = "%10s";
@@ -33,13 +33,13 @@ public class FormatExample {
 //			System.out.println(tmpStr2);
 //		}
 		/*
-		 * ÀÀ¿ë »ç¿ë2
+		 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½2
 		 */
 //		{
 //			final String FORMAT1 = "%,d";
 //			final String FORMAT2 = "%10d";
 //			final String FORMAT3 = "%3.1f";
-//			final String FORMAT4 = "%02d"; // Á¤¼ö µÎÀÚ¸® ¼ýÀÚ (ÇÑÀÚ¸®°¡ ¿À¸é ¾Õ¿¡´Â 0À» Ã¤¿ò)
+//			final String FORMAT4 = "%02d"; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Õ¿ï¿½ï¿½ï¿½ 0ï¿½ï¿½ Ã¤ï¿½ï¿½)
 //			float getValue = 100;
 //			double getValue2 = 99.15;
 //			String tmpStr = String.format(FORMAT3, getValue);
